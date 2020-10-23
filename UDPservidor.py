@@ -1,3 +1,12 @@
+'''
+Código Relativo ao Exercício 1:
+
+Servidor UDP recebe a mensagem enviada pelo cliente no formato (numero operacao numero), exemplo '2+2'.
+Com esse formato ele consegue usar o método eval() do Python, que retorna o resultado da operacao desejada
+Apos calculada a operacao, o servidor codifica e manda o resultado final para oo cliente.
+'''
+
+
 ##Importando bibliotecas
 
 from socket import *
