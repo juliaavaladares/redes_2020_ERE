@@ -31,6 +31,6 @@ message = n1 + operation + n2
 clientSocket.send(message.encode())
 modifiedSentence = clientSocket.recv(1024)
 
-print ('From Server:', modifiedSentence.decode())
+print ('Resultado final:', modifiedSentence.decode())
 
 clientSocket.close()

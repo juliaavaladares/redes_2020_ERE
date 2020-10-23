@@ -7,7 +7,6 @@ Apos calculada a operacao, o servidor codifica e manda o resultado final para oo
 '''
 
 
-
 #Biblioteca necessaria
 from socket import *
 
@@ -23,6 +22,6 @@ while True:
     connectionSocket, addr = serverSocket.accept()
 
     message = connectionSocket.recv(1024).decode()
-    modifiedMessage = str(eval(message.decode()))
+    modifiedMessage = str(eval(message))
     connectionSocket.send(modifiedMessage.encode())
     connectionSocket.close()

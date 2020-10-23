@@ -6,7 +6,6 @@ Com esse formato ele consegue usar o método eval() do Python, que retorna o res
 Apos calculada a operacao, o servidor codifica e manda o resultado final para oo cliente.
 '''
 
-
 ##Importando bibliotecas
 
 from socket import *
