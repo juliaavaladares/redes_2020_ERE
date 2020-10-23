@@ -8,10 +8,12 @@ serverName = 'localhost'
 serverPort = 12000
 clientSocket = socket(AF_INET,SOCK_DGRAM)
 
-message = raw_input('Input lowercase sentence:')
-clientSocket.sendto(message.encode(),
+n1 = input('Digite um numero: ')
+n2 = input('Digite outro nimero: ')
+operation = input('Digite a operação a ser feita: ')
 
-(serverName, serverPort))
+message = n1 + operation + n2
+clientSocket.sendto(message.encode(), (serverName, serverPort))
 
 modifiedMessage, serverAddress = clientSocket.recvfrom(2048)
 
